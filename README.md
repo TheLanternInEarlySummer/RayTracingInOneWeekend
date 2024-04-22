@@ -157,9 +157,9 @@ class metal : public material {
 	- $R_0 = (\frac{n_1-n_2}{n_1+n_2})^2$
 	- $R$ 是镜面反射系数
 
-- 参考图片：
+参考图片：
 ![](https://img-blog.csdnimg.cn/direct/85708187e4b946949ec78d640d6b73d2.jpeg#pic_center)
-- 渲染图片：
+渲染图片：
 ![](https://img-blog.csdnimg.cn/direct/513a22db8b8e4ecea96e967e82320b9c.png#pic_center)
 
 代码如下：
@@ -235,7 +235,7 @@ class camera {
 ## Q&A
 ### 什么是伽马校正（Gamma Correction）?
 
-- 相机捕捉到的图像和人眼看到的图像存在亮度上的差异，下图分别是相机捕捉到的图像和人眼看到的图像![相机捕捉到的图像](https://img-blog.csdnimg.cn/direct/aff5a21fe78d4483beb97d46bba15887.webp#pic_center) ![人眼看到的图像](https://img-blog.csdnimg.cn/direct/883bbeae13d64434b369b38c6d3385c4.webp#pic_center)-![](https://img-blog.csdnimg.cn/direct/5e211ae77d1b4799b6c9c8168acd6646.png#pic_center)因为我们的眼睛对暗部细节特别敏感，是为了让我们在光线不足的情况下，依然有辨别危险的能力
+相机捕捉到的图像和人眼看到的图像存在亮度上的差异，下图分别是相机捕捉到的图像和人眼看到的图像![相机捕捉到的图像](https://img-blog.csdnimg.cn/direct/aff5a21fe78d4483beb97d46bba15887.webp#pic_center) ![人眼看到的图像](https://img-blog.csdnimg.cn/direct/883bbeae13d64434b369b38c6d3385c4.webp#pic_center)-![](https://img-blog.csdnimg.cn/direct/5e211ae77d1b4799b6c9c8168acd6646.png#pic_center)因为我们的眼睛对暗部细节特别敏感，是为了让我们在光线不足的情况下，依然有辨别危险的能力
 - 在CRT设备中，显示器自动进行了伽马校正以便显示正确的颜色（业界统一标准的gamma值为2.2）
 - ![](https://img-blog.csdnimg.cn/direct/bf3130094264439eaefc7606824a69ce.png#pic_center)- 对于以及正规化的颜色（$color \in [0, 1]$），我们可以对其开根来调亮图片
 
